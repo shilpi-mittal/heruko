@@ -1,0 +1,32 @@
+/.gradle/
+build/
+out/
+bin/
+dist/
+generated/
+classes/
+logs/*
+
+# eclipse project files
+.classpath
+.project
+*.settings/
+
+# intellij idea project files
+*.iml
+*.ipr
+*.iws
+*.ids
+.ideaDataSources
+.idea
+
+*.diff
+.DS_Store
+
+#vim & emacs
+*.elc
+*.orig
+*.rej
+*.mergebackup
+*.swp
+*~

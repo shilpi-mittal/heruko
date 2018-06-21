@@ -1,0 +1,4 @@
+rootProject.name = 'herukoapp'
+
+include "testModule:functionalTests", "testModule:testCore"
+

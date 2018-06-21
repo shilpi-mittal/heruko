@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.saliman:gradle-cobertura-plugin:2.5.4"
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.1'
+        classpath 'net.saliman:gradle-properties-plugin:1.4.6'
+    }
+}
+
+apply plugin: 'idea'
+//apply plugin: 'versions'
+apply plugin: 'properties'
+
+subprojects {
+    apply plugin: 'idea'
+    apply plugin: 'properties'
+    apply plugin: 'java'
+
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://repo.springsource.org/plugins-release/"
+        }
+    }
+    dependencies {
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+        compile 'commons-io:commons-io:2.6'
+
+
+        testCompile 'junit:junit:4.12'
+    }
+}
+
+configure(subprojects.findAll { }) {
+}

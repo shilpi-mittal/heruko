@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56520" started-at="2018-06-20T15:56:08Z" finished-at="2018-06-20T15:57:05Z">
+    <groups>
+      <group name="update">
+        <method signature="UpdateCreatedComputer.updateComputerAddAllDetails()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerAddAllDetails" class="functional.UpdateCreatedComputer"/>
+        <method signature="UpdateCreatedComputer.updateComputerModifyAllDetails()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerModifyAllDetails" class="functional.UpdateCreatedComputer"/>
+        <method signature="UpdateCreatedComputer.updateComputerRemoveCompanyAndDates()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerRemoveCompanyAndDates" class="functional.UpdateCreatedComputer"/>
+        <method signature="UpdateCreatedComputer.updateComputerWithBlankName()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithBlankName" class="functional.UpdateCreatedComputer"/>
+        <method signature="UpdateCreatedComputer.updateComputerWithDuplicateName()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithDuplicateName" class="functional.UpdateCreatedComputer"/>
+        <method signature="UpdateCreatedComputer.updateComputerWithNewName()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithNewName" class="functional.UpdateCreatedComputer"/>
+        <method signature="UpdateCreatedComputer.updateComputerWithoutChanges()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithoutChanges" class="functional.UpdateCreatedComputer"/>
+      </group> <!-- update -->
+    </groups>
+    <test name="Default test" duration-ms="56520" started-at="2018-06-20T15:56:08Z" finished-at="2018-06-20T15:57:05Z">
+      <class name="functional.UpdateCreatedComputer">
+        <test-method status="PASS" signature="setup()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="setup" is-config="true" duration-ms="5769" started-at="2018-06-20T15:56:08Z" finished-at="2018-06-20T15:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="1349" started-at="2018-06-20T15:56:14Z" finished-at="2018-06-20T15:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerAddAllDetails()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerAddAllDetails" duration-ms="7738" started-at="2018-06-20T15:56:15Z" finished-at="2018-06-20T15:56:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerAddAllDetails -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="410" started-at="2018-06-20T15:56:23Z" finished-at="2018-06-20T15:56:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerModifyAllDetails()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerModifyAllDetails" duration-ms="6637" started-at="2018-06-20T15:56:24Z" finished-at="2018-06-20T15:56:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerModifyAllDetails -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="451" started-at="2018-06-20T15:56:30Z" finished-at="2018-06-20T15:56:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerRemoveCompanyAndDates()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerRemoveCompanyAndDates" duration-ms="7767" started-at="2018-06-20T15:56:31Z" finished-at="2018-06-20T15:56:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerRemoveCompanyAndDates -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="445" started-at="2018-06-20T15:56:38Z" finished-at="2018-06-20T15:56:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerWithBlankName()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithBlankName" duration-ms="4991" started-at="2018-06-20T15:56:39Z" finished-at="2018-06-20T15:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerWithBlankName -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="413" started-at="2018-06-20T15:56:44Z" finished-at="2018-06-20T15:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerWithDuplicateName()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithDuplicateName" duration-ms="8430" started-at="2018-06-20T15:56:44Z" finished-at="2018-06-20T15:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerWithDuplicateName -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="412" started-at="2018-06-20T15:56:53Z" finished-at="2018-06-20T15:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerWithNewName()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithNewName" duration-ms="5606" started-at="2018-06-20T15:56:53Z" finished-at="2018-06-20T15:56:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerWithNewName -->
+        <test-method status="PASS" signature="init()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="init" is-config="true" duration-ms="528" started-at="2018-06-20T15:56:59Z" finished-at="2018-06-20T15:56:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="updateComputerWithoutChanges()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="updateComputerWithoutChanges" duration-ms="5515" started-at="2018-06-20T15:56:59Z" finished-at="2018-06-20T15:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateComputerWithoutChanges -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:functional.UpdateCreatedComputer@4f7d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-06-20T15:57:05Z" finished-at="2018-06-20T15:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- functional.UpdateCreatedComputer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,14 @@
+<suite name="testNG Test" verbose="10" allow-return-values="true" configfailurepolicy="continue">
+  <test name="testNG test">
+    <groups>
+      <run>
+        <include name="create"/>
+        <include name="update"/><include name="retrieve"></include>
+      	<include name="delete"></include>
+      </run>
+    </groups>
+    <packages>
+      <package name="functional"/>
+    </packages>
+  </test>
+</suite>

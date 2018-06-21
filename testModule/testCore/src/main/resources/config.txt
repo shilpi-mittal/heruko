@@ -1,0 +1,13 @@
+BASR_URL=http://computer-database.herokuapp.com/computers
+DEFAULT_WAIT=10
+COMPUTER_NAME=Computer name
+INTRODUCED_DATE=Introduced date
+DISCONTINUED_DATE=Discontinued date
+COMPANY=Company
+COMPUTER_HELP_TEXT=Required
+INTRODUCED_DATE_HELP_TEXT=Date ('yyyy-MM-dd')
+DISCONTINUED_DATE_HELP_TEXT=Date ('yyyy-MM-dd')
+EDITOR_TITLE=Edit computer
+TOPBAR_TEXT=Play sample application — Computer database
+CREATE_PAGE_TITLE=Add a computer
+SEARCH_COUNT_TEXT= computers found

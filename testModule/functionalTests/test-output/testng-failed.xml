@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" verbose="10" name="Failed suite [testNG Test]" allow-return-values="true">
+  <test thread-count="5" verbose="10" name="testNG test(failed)">
+    <groups>
+      <run>
+        <include name="create"/>
+        <include name="update"/>
+        <include name="retrieve"/>
+        <include name="delete"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="functional.RetrieveCreatedComputer">
+        <methods>
+          <include name="verifyValidDateFormate"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- functional.RetrieveCreatedComputer -->
+    </classes>
+  </test> <!-- testNG test(failed) -->
+</suite> <!-- Failed suite [testNG Test] -->

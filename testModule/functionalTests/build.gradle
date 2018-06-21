@@ -1,0 +1,89 @@
+buildscript {
+  repositories { jcenter() }
+
+  dependencies {
+    classpath 'ru.alfalab.gradle:cucumber-reporting-gradle-plugin:0.1.0'
+  }
+}
+
+apply plugin: 'ru.alfalab.cucumber-reporting'
+
+//specify the plugins
+apply plugin: 'java'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+version = '1.0'
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+     jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.projectlombok:lombok:1.16.20'
+    compile 'org.seleniumhq.selenium:selenium-java:3.11.0'
+    compile 'org.seleniumhq.selenium:selenium-firefox-driver:3.11.0'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.testng:testng:6.14.3'
+    testCompile 'org.springframework:spring-test:5.0.5.RELEASE',
+            'com.google.inject:guice:4.2.0',
+            'postgresql:postgresql:9.1-901-1.jdbc4'
+
+    compile project(':testModule:testCore')
+}
+
+
+jar {
+    baseName = 'gs-gradle'
+    version = '0.1.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.3.1'
+}
+
+//getHomeDir gives the GRADLE_HOME
+
+task getHomeDir << {
+    println gradle.gradleHomeDir
+}
+
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
+}
+
+task testNGTests(type: Test) {
+    dependsOn assemble, compileTestJava
+    useTestNG() {
+        systemProperties['browser'] = 'firefox'
+        suites 'testNGTests.xml'
+    }
+
+    testLogging.showStandardStreams = true
+
+    // set heap size for the test JVM(s)
+    minHeapSize = "128m"
+    maxHeapSize = "512m"
+
+    // listen to events in the test execution lifecycle
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
+
+    // listen to standard out and standard error of the test JVM(s)
+    onOutput { descriptor, event ->
+        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message)
+    }
+
+    
+}
